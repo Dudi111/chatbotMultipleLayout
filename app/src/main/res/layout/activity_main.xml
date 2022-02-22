@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nsv1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#E5E5E5"
+            tools:context=".ui.views.MainActivity">
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hi"
+                android:layout_margin="15dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:id="@+id/tvmain1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hi"
+                android:layout_margin="15dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_below="@+id/tvmain1"
+                android:id="@+id/tvmain2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hi"
+                android:layout_margin="15dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_below="@+id/tvmain2"
+                android:id="@+id/tvmain3"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cancel"
+                android:layout_below="@+id/tvmain3"
+                android:layout_margin="15dp"
+                android:id="@+id/button1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_toRightOf="@+id/button1"
+                android:layout_below="@+id/tvmain3"
+                android:layout_margin="35dp"
+                android:id="@+id/button2"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/button2"
+                android:layout_marginTop="15dp" />
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
+</layout>
